@@ -38,7 +38,7 @@ func _ready() -> void:
 	_sparks.gravity = Vector2(0.0, 500.0)
 	_sparks.scale_amount_min = 2.0
 	_sparks.scale_amount_max = 3.5
-	_sparks.color = Color(0.0, 0.95, 1.0, 0.55)
+	_sparks.color = Color(1.0, 0.2, 0.15, 0.55)
 	add_child(_sparks)
 
 func reset(x: float, y: float) -> void:
@@ -116,11 +116,11 @@ func _squash(s: Vector2) -> void:
 func _draw() -> void:
 	# 外发光
 	draw_rect(Rect2(-HALF - 4.0, -HALF - 4.0, HALF * 2.0 + 8.0, HALF * 2.0 + 8.0),
-		Color(0.0, 1.0, 1.0, 0.25), false, 3.0)
+		Color(1.0, 0.25, 0.2, 0.25), false, 3.0)
 	# 暗底 + 亮面
-	draw_rect(Rect2(-HALF, -HALF, HALF * 2.0, HALF * 2.0), Color(0.0, 0.3, 0.35))
+	draw_rect(Rect2(-HALF, -HALF, HALF * 2.0, HALF * 2.0), Color(0.35, 0.08, 0.1))
 	draw_rect(Rect2(-HALF + 3.0, -HALF + 3.0, HALF * 2.0 - 6.0, HALF * 2.0 - 6.0),
-		Color(0.05, 0.95, 1.0))
+		Color(1.0, 0.2, 0.15))
 	# 眼睛
 	draw_rect(Rect2(-6.0, -8.0, 5.0, 9.0), Color(0.0, 0.08, 0.12))
 	draw_rect(Rect2(3.0, -8.0, 5.0, 9.0), Color(0.0, 0.08, 0.12))
