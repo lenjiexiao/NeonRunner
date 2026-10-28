@@ -1,0 +1,20 @@
+config_version=5
+
+[application]
+
+config/name="霓虹快跑 Neon Runner"
+config/description="赛博朋克风一键跑酷：跳跃、二段跳、吃能量球，看你能跑多远。"
+run/main_scene="res://scenes/Main.tscn"
+config/icon="res://icon.svg"
+config/features=PackedStringArray("4.7")
+
+[display]
+
+window/size/viewport_width=1152
+window/size/viewport_height=648
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.04, 0.02, 0.1, 1)
