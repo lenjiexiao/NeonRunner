@@ -390,7 +390,7 @@ func _die() -> void:
 	flash = 1.0
 	shake_time = 0.5
 	player.world_moving = false
-	_burst(player.position, Color(1.0, 0.2, 0.15), 40, 420.0, 0.8)
+	_burst(player.position, Color(0.05, 0.95, 1.0), 40, 420.0, 0.8)
 	player.visible = false
 	player.set_physics_process(false)
 	sfx_death_a.play()
